@@ -1,0 +1,23 @@
+<h1>APLIKACIJA NO.2</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @article.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.description %></td>
+      <td>|| <%= link_to 'Show', article_path(article) %> || <%= link_to 'Delete',article, method: :delete, data: { confirm: 'Are you sure?' }  %> || <%= link_to 'Edit', edit_article_path(article) %> || </td>
+    </tr>
+  <% end %>
+</table><br/><br/>
+|| <%= link_to 'NEW', new_article_path %> ||<br/><br/><br/><br/>
+<div id="slika">
+<h1>Created by Boki :) </h1>
+<%= image_tag("13406766_1320171138012498_1129193582581249555_n.jpg", :alt => "rss feed") %>
+</div>
+

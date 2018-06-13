@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+
+table {
+    border:2px solid blue;
+    background-color: yellow;
+}
+
+body {
+    background-color: green;
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+a {
+    color: purple;
+}
+.slika {
+    width: 250px;
+    height: 250px;
+    border: 6px solid red;
+}
