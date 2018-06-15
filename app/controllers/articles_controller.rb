@@ -25,6 +25,7 @@ end
 def destroy
     @article=Article.find(params[:id])
     @article.destroy
+    flash[:notice] = "Article was successfully deleted"
     redirect_to articles_path
   end
 
@@ -34,9 +35,10 @@ end
   def update
     @article=Article.find(params[:id])
         if @article.update_attributes(article_params)
+            flash[:notice] = "Article was successfully updated"
             redirect_to articles_path
         else
-            render 'new'
+            render 'edit'
         end
   end
 
