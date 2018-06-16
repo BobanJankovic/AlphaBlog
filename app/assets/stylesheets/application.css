@@ -36,7 +36,7 @@ a {
     border: 6px solid red;
 }
 
-input {
+.button_to input {
     border: none;
     background-color: rgba(200,0,0,0);
     color: purple;
