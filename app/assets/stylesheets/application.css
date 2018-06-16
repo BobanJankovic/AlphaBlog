@@ -15,33 +15,3 @@
  */
 
 
-table {
-    border:2px solid blue;
-    background-color: yellow;
-}
-
-body {
-    background-color: green;
-}
-img {
-    width: 300px;
-    height: 300px;
-}
-a {
-    color: purple;
-}
-.slika {
-    width: 250px;
-    height: 250px;
-    border: 6px solid red;
-}
-
-.button_to input {
-    border: none;
-    background-color: rgba(200,0,0,0);
-    color: purple;
-    text-decoration: underline;
-    font: 400 15.3333px "Times New Roman";
-    padding: 0;
-    cursor:pointer;
-}
