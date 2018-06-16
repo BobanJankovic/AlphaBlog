@@ -2,8 +2,10 @@
 @import "bootstrap";
 
 table {
-    border:2px solid blue;
+    
     background-color: yellow;
+    border-collapse: separate;
+    border: 4px solid black;
 }
 
 body {
@@ -12,6 +14,8 @@ body {
 img {
     width: 300px;
     height: 300px;
+    border: 6px solid yellowgreen;
+
 }
 a {
     color: purple;
