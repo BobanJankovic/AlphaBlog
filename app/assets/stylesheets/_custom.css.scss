@@ -113,13 +113,12 @@ a {
     border: 6px solid red;
 }
 
-.button_to input {
-    border: none;
-    background-color: rgba(200,0,0,0);
-    color: purple;
-    text-decoration: underline;
-    font: 400 15.3333px "Times New Roman";
-    padding: 0;
-    cursor:pointer;
+.btn1 {
+    float:left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.article-actions {
+    border-top:1px solid firebrick;
 }
  
