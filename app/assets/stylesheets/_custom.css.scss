@@ -7,12 +7,30 @@
     color:red;
     
 }
+.dugme {
+    margin-top: 34%;
+}
 #Articles {
     color: greenyellow;
 
 }
+.navbar {
+    margin-bottom: 30px;
+}
 .center {
     text-align: center;
+}
+.jumbotron {
+    background-image: asset-url('1_-oIlwIWlt0BDN4b5a9rRCQ.png');
+    height:550px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.jumbotron h1 {
+    letter-spacing: 10px;
+    color: black;
+    text-align:center;
+    text-shadow: 3px 3px gray;
 }
 
 
