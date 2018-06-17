@@ -11,16 +11,36 @@
       </ul>
     </div>
   <% end %>
-  <%= form_for @article do |f| %>
-<p>
-    <%= f.label :title %> <br/>
-    <%= f.text_field :title %> <br/><br/>
-    <%= f.label :description %> <br/>
-    <%= f.text_area :description %> <br/><br/>
-     <%= f.submit  %> 
 
 
 
- </p>
-
+<%= form_for @article, :html => { id:"form-new"}  do |f| %>
+  <div class="form-group row">
+    <%= f.label :title,class:"col-sm-2 col-form-label" %>
+    
+    <div class="col-sm-10">
+      
+      <%= f.text_field :title,class:"form-control", placeholder:"Title of article" %>
+    </div>
+  </div>
+  <div class="form-group row">
+    <%= f.label :description,class:"col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+      <%= f.text_area :description, class:"form-control", placeholder:"Body of description" %>
+    </div>
+  </div>
+  
+  
+  <div class="form-group row">
+    <div class="col-sm-10 offset-sm-2">
+      <%= f.submit class:"btn btn-primary btn-lg"  %>
+    </div>
+  </div>
 <% end %>
+
+<div class="link">
+[ <%=  link_to "Back to articles listing", articles_path%> ]
+</div>
+
+
+

@@ -41,12 +41,24 @@
     width:250px;
 
 }
+.link {
+    text-align: center;
+}
+.container h1 {
+    text-align:center;
+}
+#form-new {
+    margin-top:50px;
+}
 footer {
     margin-top: 45px;
     padding-top: 5px;
     border-top: 2px solid firebrick;
-    color: blue;
+    color: black;
 
+}
+textarea {
+    height:150px;
 }
 footer{
     a:hover {
@@ -55,7 +67,7 @@ footer{
     
     }
     a {
-        color:black;
+        color:blue;
     }
     small {
         float:left;
