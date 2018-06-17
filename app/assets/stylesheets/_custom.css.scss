@@ -10,6 +10,9 @@
 .dugme {
     margin-top: 34%;
 }
+.dugme a {
+    text-transform: uppercase;
+}
 #Articles {
     color: greenyellow;
 
@@ -31,6 +34,43 @@
     color: black;
     text-align:center;
     text-shadow: 3px 3px gray;
+    
+}
+.btn-xlarge {
+    background-color:  FireBrick;
+    width:250px;
+
+}
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 2px solid firebrick;
+    color: blue;
+
+}
+footer{
+    a:hover {
+    color:firebrick;
+    text-decoration: none;
+    
+    }
+    a {
+        color:black;
+    }
+    small {
+        float:left;
+    }
+    ul {
+        float: right;
+        list-style: none;
+
+    }
+}
+ 
+
+.btn-xlarge:hover {
+    background-color: gray;
+    text-decoration: none;
 }
 
 
@@ -42,7 +82,7 @@ table {
 }
 
 body {
-    background-color: green;
+    background-color: rgb(129, 148, 129);
 }
 img {
     width: 300px;
