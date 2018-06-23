@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
     http_basic_authenticate_with name: "bobivankenobi", password: "bobicar92", except: [:index, :show]
     before_action :set_article, only: [:edit, :update, :show, :destroy]
 def index
-    @article=Article.all
+    @articles=Article.all
 end
 
 

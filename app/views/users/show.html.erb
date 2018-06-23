@@ -1,0 +1,17 @@
+
+
+<h1 align="center">Welcome to <%= @user.username %>'s page</h1><br/><br/>
+
+<div class="row">
+
+<div class="col-sm-4 offset-sm-4 center">
+
+<%= gravatar_for @user, size: 150 %><br/><br/>
+
+</div>
+
+</div><br/><br/>
+
+<h4 align="center"><%= @user.username %>'s articles</h4>
+<%= render partial: "articles/article", collection: @user.articles %>
+
