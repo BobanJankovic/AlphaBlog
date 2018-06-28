@@ -108,7 +108,7 @@ body {
 }
 
 a {
-    color: purple;
+    color: aqua;
 }
 
 
@@ -135,7 +135,16 @@ a {
 .article-actions {
     border-top:1px solid firebrick;
 }
- 
+.lists {
+    list-style: none;
+    
+}
+#none{
+    list-style: none;
+}
+.dropdown-menu {
+    left:-15%;
+}
 #articles1 {
     background: none;
     border: none;

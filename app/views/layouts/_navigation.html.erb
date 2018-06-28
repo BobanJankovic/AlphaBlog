@@ -11,11 +11,10 @@
          <%= link_to "Articles", articles_path,class: "nav-link", id:"Articles" %> 
         
       </li>
+      <li><%= link_to "Users", users_path, class:"nav-link", id:"Articles" %></li>
       <li class="nav-item">
       <% if logged_in? %>
-       <%= button_to "Log out", logout_path, method: :delete,
-        data: { confirm: "Are you sure you want to logout"},
-        class: "nav-link", id:"articles1" %>
+       
        
 
         
@@ -32,18 +31,41 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <%else%>
-      <li><%= link_to "Log in", login_path, class:"nav-link" %></li>
-      <li><%= link_to "sing up", signup_path, class:"nav-link" %></li>
+      
+      
       <%end%>
 
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
+
+<!--
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+-->    
+<% if logged_in? %>
+    <li class="nav-item dropdown lists">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Your profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+          <%= link_to "Edit your profile", edit_user_path(current_user), class:"dropdown-item" %>
+          <%= link_to "View your profile", user_path(current_user), class:"dropdown-item" %>
+          <div class="dropdown-divider"></div>
+          
+
+          <%= button_to "Log out", logout_path, method: :delete,
+        data: { confirm: "Are you sure you want to logout"},
+        class: "dropdown-item", id:"articles1" %>
+        </div>
+      </li>
+      <%else%>
+      <li class="lists"><%= link_to "Log in", login_path, class:"nav-link" %></li>
+      <li class="lists"><%= link_to "Sing up", signup_path, class:"nav-link" %></li>
+      <%end%>
   </div>
 </nav>
