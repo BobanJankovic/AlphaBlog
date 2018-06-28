@@ -35,6 +35,7 @@
 <hr>
 
 <%= simple_format(@article.description) %>
+<% if logged_in? && current_user == @article.user%>
 
 <div class="article-actions">
 
@@ -49,6 +50,7 @@ class: "btn btn1 btn-xs btn-danger" %>
 <%= link_to "View all articles", articles_path, class: "btn btn1 btn-xs btn-success" %>
 
 </div>
+<%end%>
 
 </div>
 </div>
