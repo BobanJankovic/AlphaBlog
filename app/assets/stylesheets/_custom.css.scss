@@ -101,6 +101,22 @@ footer{
 }
 
 
+.pagination ul li a {
+    padding: 5px;
+    text-decoration: none;
+}
+.pagination ul li {
+    margin: 1px;
+    border: 1px solid darkslategray;
+    border-radius: 10%;
+    background-color: lightslategray;
+    box-shadow: 2px 2px darkslategray;
+    
+}
+
+.pagination ul li:hover {
+    background-color: white;
+}
 
 
 body {
@@ -108,7 +124,8 @@ body {
 }
 
 a {
-    color: aqua;
+    color: black;
+    
 }
 
 

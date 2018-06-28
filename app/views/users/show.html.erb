@@ -18,7 +18,7 @@
 </div><br/><br/>
 
 <h4 align="center"><%= @user.username %>'s articles</h4>
-<%= will_paginate @user_articles %>
+
 <!--obrati paznju na @user_articles stavio sam iz razloga jer drugacije pagination nece 
 raditi onda su to 2 razlicite varijable pre je bila user.articles -->
 <%= render partial: "articles/article", collection: @user_articles %>
