@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+    #helper metode mogu koristiti u viewima ne u konrolerima, 
+    #zbog toga sam napravio helper_method
     helper_method :current_user, :logged_in?
 
     def current_user #ovo mi je ulogovani user
