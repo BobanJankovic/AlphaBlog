@@ -1,30 +1,23 @@
-
-  <div class="row rowindex">
-    <div class="card col-sm-8 bg-secondary offset-sm-2">
-      <div class="card-body">
-    
-
-      <%= link_to article.title, article_path(article) %><br/>
-      <%= article.description %><br/>
-       <div class="created">
-        <small>Created by: <%= link_to "#{article.user.username}", user_path(article.user) if article.user %>,
-        <%= time_ago_in_words(article.created_at) %> ago, last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
-        </div>
-        <% if logged_in? && ( current_user == article.user || current_user.admin? ) %>
-      <%= link_to "Edit this article", edit_article_path(article), class: "btn btn2 btn-xs btn-primary" %>
-      <%= button_to "Delete this article", article_path(article), method: :delete,
-        data: { confirm: "Are you sure you want to delete the article?"},
-        class: "btn btn2 btn-xs btn-danger" %>
-        <%end%>
-       
-
-    
-      </div>
+<div class="row rowindex">
+  <div class="card col-sm-8 bg-secondary offset-sm-2">
+    <div class="card-body">
+      <%= link_to article.title, article_path(article) %>
+        <br/>
+        <%= article.description %>
+          <br/>
+          <div class="created">
+            <small>Created by:
+              <%= link_to "#{article.user.username}", user_path(article.user) if article.user %>,
+                <%= time_ago_in_words(article.created_at) %> ago, last updated:
+                  <%= time_ago_in_words(article.updated_at) %> ago</small>
+          </div>
+          <% if logged_in? && ( current_user == article.user || current_user.admin? ) %>
+            <%= link_to "Edit this article", edit_article_path(article), class: "btn btn2 btn-xs btn-primary" %>
+            <%= button_to "Delete this article", article_path(article), method: :delete,
+              data: { confirm: "Are you sure you want to delete the article?"},
+              class: "btn btn2 btn-xs btn-danger" %>
+          <%end%>
     </div>
-
   </div>
 
-
-
-
-
+</div>

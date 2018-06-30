@@ -1,68 +1,73 @@
 #logo {
     letter-spacing: 5px;
     color:white;
-
 }
+
 #logo:hover {
     color:red;
-    
 }
+
 .dugme {
     margin-top: 34%;
 }
 .pagination {
     justify-content: center;
 }
+
 .dugme a {
     text-transform: uppercase;
 }
+
 #Articles {
     color: greenyellow;
-
 }
-.listing {
 
+.listing {
     list-style: none;
-    
     padding-left: 0;
-    
-    }
+}
+
 .img-circle {
     border-radius: 50%;
 }
+
 .navbar {
     margin-bottom: 30px;
 }
+
 .center {
     text-align: center;
 }
+
 .jumbotron {
     background-image: asset-url('1_-oIlwIWlt0BDN4b5a9rRCQ.png');
     height:550px;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .jumbotron h1 {
     letter-spacing: 10px;
     color: black;
     text-align:center;
     text-shadow: 3px 3px gray;
-    
 }
+
 .btn-xlarge {
     background-color:  FireBrick;
     width:250px;
-
 }
+
 .link {
     text-align: center;
 }
+
 .container h1 {
     text-align:center;
 }
+
 #form-new {
     margin-top:50px;
-    
 }
 
 footer {
@@ -70,27 +75,29 @@ footer {
     padding-top: 5px;
     border-top: 2px solid firebrick;
     color: black;
-
 }
+
 textarea {
     height:150px;
 }
-footer{
+
+footer {
     a:hover {
     color:firebrick;
     text-decoration: none;
-    
     }
+
     a {
         color:blue;
     }
+
     small {
         float:left;
     }
+
     ul {
         float: right;
         list-style: none;
-
     }
 }
  
@@ -100,24 +107,22 @@ footer{
     text-decoration: none;
 }
 
-
 .pagination ul li a {
     padding: 5px;
     text-decoration: none;
 }
+
 .pagination ul li {
     margin: 1px;
     border: 1px solid darkslategray;
     border-radius: 10%;
     background-color: lightslategray;
     box-shadow: 2px 2px darkslategray;
-    
 }
 
 .pagination ul li:hover {
     background-color: white;
 }
-
 
 body {
     background-color: rgb(129, 148, 129);
@@ -126,9 +131,7 @@ body {
 a {
     color: black;
     font-weight: 600;
-    
 }
-
 
 .btn1 {
     float:left;
@@ -136,15 +139,16 @@ a {
     margin-top: 10px;
 }
 
-.btn2{
+.btn2 {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
-
 }
-.rowindex{
+
+.rowindex {
     margin-bottom: 20px;
 }
+
 .created {
     margin-top: 10px;
     border-top: 1px solid black;
@@ -153,16 +157,19 @@ a {
 .article-actions {
     border-top:1px solid firebrick;
 }
+
 .lists {
     list-style: none;
-    
 }
+
 #none{
     list-style: none;
 }
+
 .dropdown-menu {
     left:-15%;
 }
+
 #articles1 {
     background: none;
     border: none;

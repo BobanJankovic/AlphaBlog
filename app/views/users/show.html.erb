@@ -1,29 +1,21 @@
-
-
-<h1 align="center">Welcome to <%= @user.username %>'s page</h1><br/><br/>
+<h1 align="center">Welcome to
+  <%= @user.username %>'s page</h1>
+<br/>
+<br/>
 <div class="center">
-
-<%= will_paginate @user_articles %>
-
+  <%= will_paginate @user_articles %>
 </div>
-
 <div class="row">
-
-<div class="col-sm-4 offset-sm-4 center">
-
-<%= gravatar_for @user, size: 150 %><br/><br/>
-
+  <div class="col-sm-4 offset-sm-4 center">
+    <%= gravatar_for @user, size: 150 %>
+      <br/>
+      <br/>
+  </div>
 </div>
-
-</div><br/><br/>
-
-<h4 align="center"><%= @user.username %>'s articles</h4>
-
+<br/>
+<br/>
+<h4 align="center">
+  <%= @user.username %>'s articles</h4>
 <!--obrati paznju na @user_articles stavio sam iz razloga jer drugacije pagination nece 
 raditi onda su to 2 razlicite varijable pre je bila user.articles -->
 <%= render partial: "articles/article", collection: @user_articles %>
-
-
-
-
-
