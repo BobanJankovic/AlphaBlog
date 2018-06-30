@@ -10,7 +10,7 @@
         <small>Created by: <%= link_to "#{article.user.username}", user_path(article.user) if article.user %>,
         <%= time_ago_in_words(article.created_at) %> ago, last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
         </div>
-        <% if logged_in? && current_user == article.user%>
+        <% if logged_in? && ( current_user == article.user || current_user.admin? ) %>
       <%= link_to "Edit this article", edit_article_path(article), class: "btn btn2 btn-xs btn-primary" %>
       <%= button_to "Delete this article", article_path(article), method: :delete,
         data: { confirm: "Are you sure you want to delete the article?"},
