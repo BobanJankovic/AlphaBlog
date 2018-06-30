@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-    has_many :articles
+    #dependent if we destroy our user it will also destroy all articles that user has been created
+    has_many :articles, dependent: :destroy
     before_save { self.email = email.downcase }
     validates :username, presence:true, uniqueness: { case_sensitive: false }, length: { minimum: 3, maximum: 25}
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -10,4 +11,4 @@ class User < ApplicationRecord
     has_secure_password
 
 
-end
+end 
