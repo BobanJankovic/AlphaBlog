@@ -125,12 +125,25 @@ footer {
 }
 
 body {
-    background-color: rgb(129, 148, 129);
+    background-color: greenyellow;
 }
 
 a {
     color: black;
     font-weight: 600;
+}
+
+.button_to input {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.button_to input:hover {
+    border: 1px solid black;
+    background-color: red;
+    text-decoration: underline;
+    
 }
 
 .btn1 {
