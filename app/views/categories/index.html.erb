@@ -1,0 +1,15 @@
+<h1>LIsting all categories</h1>
+<% @categories.each do |category| %>
+<ul class="listing">
+      <div class="row">
+        <div class="well col-sm-4 offset-sm-4">
+          
+          <li class="article-title">
+            <%= link_to "#{category.name}", category_path(category) %>
+          </li>
+         
+          
+        </div>
+      </div>
+    </ul>
+  <% end %>
