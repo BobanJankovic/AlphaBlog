@@ -128,24 +128,22 @@ body {
     background-color: greenyellow;
 }
 
+.marg {
+    margin-bottom: 15px;
+
+}
+
+.marg .card-body {
+    text-align:center;
+    
+}
+
 a {
     color: black;
     font-weight: 600;
 }
 
-.button_to input {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    
-}
 
-.button_to input:hover {
-    border: 1px solid black;
-    background-color: red;
-    text-decoration: underline;
-    
-}
 
 .btn1 {
     float:left;
