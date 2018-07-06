@@ -1,0 +1,12 @@
+<h1 align="center"><%= "Category: " + @category.name %></h1>
+
+<div class="col-sm-4 offset-sm-4" >
+  <%= will_paginate @category_articles  %>
+</div>
+
+<%= render partial: "articles/article", collection: @category_articles %>
+
+<div class="col-sm-4 offset-sm-4" >
+  <%= will_paginate @category_articles %>
+</div>
+

@@ -18,6 +18,19 @@
     text-align:center;
 }
 
+.badge {
+    background-color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-right: 5px;
+    border-radius: 20%;
+}
+    
+.input_checkbox input {
+    width: auto !important;
+}
+
 .lab label {
     margin-right: 10px;
     margin-left: 10px;
