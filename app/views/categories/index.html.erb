@@ -6,10 +6,10 @@
   <% @categories.each do |category| %>
     <div class="card col-sm-8 bg-secondary marg bg-info offset-sm-2">
     <div class="card-body">
-      <%= link_to "#{category.name}", category_path(category) %>
+      <%= link_to "#{category.name}", category_path(category) %><br/>
+      <small><%= pluralize(category.articles.count, "article") %></small>
       </div>
       </div>
-        
     <% end %>
     
   
