@@ -1,9 +1,10 @@
 <h1 align="center"><%= "Category: " + @category.name %></h1>
 <div class="col-sm-3 offset-sm-5" >
   <% if logged_in? and current_user.admin? %>
-    <span class="btn btn2 btn-xs btn-danger"><%= link_to "Edit Category Name", edit_category_path(@category) %></span>
+    <%= link_to "Edit Category Name", edit_category_path(@category),class: "editbutton" %>
   <% end %>
-</div>
+  </div>
+
 <div class="col-sm-4 offset-sm-4" >
   <%= will_paginate @category_articles  %>
 </div>
@@ -13,4 +14,5 @@
 <div class="col-sm-4 offset-sm-4" >
   <%= will_paginate @category_articles %>
 </div>
+
 

@@ -132,7 +132,9 @@ footer {
     padding: 5px;
     text-decoration: none;
 }
-
+.pagination {
+    margin-top: 10px;
+}
 .pagination ul li {
     margin: 1px;
     border: 1px solid darkslategray;
@@ -179,7 +181,21 @@ a {
 }
 
 .rowindex {
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+.editbutton {
+    border: 2px solid black;
+    background-color: whitesmoke;
+    padding: 3px;
+    
+}
+.editbutton:hover {
+    
+    background-color: yellow;
+    text-decoration: none;
+    
+
 }
 
 .created {
